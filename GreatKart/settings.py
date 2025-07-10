@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'store.apps.StoreConfig',
     'carts.apps.CartsConfig',
+    'orders.apps.OrdersConfig',
     
     ]
 
@@ -155,3 +156,10 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'rahulchowdhury9938@gmail.com'
 EMAIL_HOST_PASSWORD = 'tqie nyuo vovm syal'
 EMAIL_USE_TLS = True
+
+
+RAZORPAY_KEY_ID = "rzp_test_L99aU95RVoAr3A"  #os.getenv('RAZORPAY_KEY_ID')
+RAZORPAY_KEY_SECRET = "gmgiQ60Ea67UwitzShP1kZg7" #os.getenv('RAZORPAY_KEY_SECRET')
+
+# RAZORPAY_KEY_ID=rzp_test_L99aU95RVoAr3A
+# RAZORPAY_KEY_SECRET=gmgiQ60Ea67UwitzShP1kZg7

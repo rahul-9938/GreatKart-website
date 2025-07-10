@@ -1,0 +1,24 @@
+ {% extends 'base.html' %}
+{% comment %}
+{% block content %}
+<div class="container mt-5 text-center">
+    <h2 class="text-success">🎉 Payment Successful!</h2>
+    <p>Thank you for your order. Your payment has been verified successfully.</p>
+    <a href="/" class="btn btn-primary mt-3">Back to Home</a>
+</div>
+{% endblock %} {% endcomment %}
+
+{% block content %}
+<div class="container mt-5 text-center">
+    <h2 class="text-success">🎉 Payment Successful!</h2>
+    <p>Your order has been placed successfully.</p>
+    <p>You will be redirected shortly...</p>
+    <a href="/" class="btn btn-primary mt-3">Go to Homepage Now</a>
+</div>
+
+<script>
+    setTimeout(function () {
+        window.location.href = '/'; // Change this to /dashboard/ or /orders/ if needed
+    }, 5000); // 5 seconds
+</script>
+{% endblock %}
